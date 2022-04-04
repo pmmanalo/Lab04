@@ -19,9 +19,14 @@ public class Lab04 {
   public static List<List<Integer>> multiSum(int n){
       List<List<Integer>> outer = new ArrayList<>();
       List<Integer> inner;
-	  if(n<=0) { 
+	  if(n<0) { 
 		  //throw new java.lang.UnsupportedOperationException("Not supported yet."); 
-		  throw new NumberFormatException("n cannot be zero");
+		  throw new NumberFormatException("try again with a positive integer");
+	  }
+	  if(n==0) {
+		  inner = new ArrayList<>();
+		  inner.add(n);
+	  outer.add(inner);
 	  }
 	  for (int i = 1; i * i <= n; i++) {
 		  inner = new ArrayList<>();
@@ -62,7 +67,7 @@ public class Lab04 {
 /** main method for testing
   **/
   public static void main(String[] args){
-    int n = 6200;
+    int n = 16;
     System.out.print("Expected result for " + n + ":\n" + " [[1,16], [2,8], [2,2,4], [2,2,2,2], [4,4]]\n");
     System.out.print("A total number of unique results found: 5\n");
     System.out.print("------------------------\n");
