@@ -10,8 +10,7 @@ import java.util.List;
   * This program returns the multisum factors of n
   **/
 public class lab4 {
- // Do not create a global variable for this lab
-/** [TODO] It checks to see if n is divisible by for loop iterator i. If so, we add the appropriate values into the inner
+/** This program checks to see if n is divisible by for loop iterator i. If so, we add the appropriate values into the inner
  * array and then add the inner array into the outer array list as it is a array list of arrays
   * @param n integer to calculate for unique combination of factors
   * @returns an arraylist of unique arraylist of factors to n
@@ -20,7 +19,6 @@ public class lab4 {
       List<List<Integer>> outer = new ArrayList<>();
       List<Integer> inner;
 	  if(n<0) { 
-		  //throw new java.lang.UnsupportedOperationException("Not supported yet."); 
 		  throw new NumberFormatException("try again with a positive integer");
 	  }
 	  else if(n==0) {
@@ -63,9 +61,6 @@ public class lab4 {
 	  }
 	  return outer;//return out arraylist
 }
-
-/** main method for testing
-  **/
   public static void main(String[] args){
     int n = 16;
     System.out.print("Expected result for " + n + ":\n" + " [[1,16], [2,8], [2,2,4], [2,2,2,2], [4,4]]\n");
