@@ -1,6 +1,6 @@
 package lab4;
 
-//import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.Arguments;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -67,7 +67,7 @@ public class lab4 {
 /** main method for testing
   **/
   public static void main(String[] args){
-    int n = -1;
+    int n = 16;
     System.out.print("Expected result for " + n + ":\n" + " [[1,16], [2,8], [2,2,4], [2,2,2,2], [4,4]]\n");
     System.out.print("A total number of unique results found: 5\n");
     System.out.print("------------------------\n");
