@@ -1,4 +1,4 @@
-package Lab04;
+package lab04;
 
 import org.junit.jupiter.params.provider.Arguments;
 
@@ -9,7 +9,7 @@ import java.util.List;
   * @date [03/10/22]
   * This program returns the multisum factors of n
   **/
-public class Lab04 {
+public class lab04 {
  // Do not create a global variable for this lab
 /** [TODO] It checks to see if n is divisible by for loop iterator i. If so, we add the appropriate values into the inner
  * array and then add the inner array into the outer array list as it is a array list of arrays
