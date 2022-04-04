@@ -6,5 +6,6 @@ determined in the beginning of the initial loop, then the second loop is initiat
 the 8 from [2,8] was divisible further.
 
 I believe the run time and space complexity would be o(n^2) as I have a nested loop working in the function. 
+
 Difficulties I encountered were figuring out how to automatically split values further after initially finding the factors of given numbers which I
 ended up using a nested loop to do.  
